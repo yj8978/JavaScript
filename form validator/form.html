@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body> 
+  <div class="form" style="border: 1px solid black; padding: 5px 5px;">
+    <form onsubmit="return validateForm()">
+              <label for="uname">Username</label>
+              <input type="text" name="uname" id="uname">
+              <br>
+              <br>
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password">
+              <br>
+              <br>
+              <label for="country">Country</label>
+              <select name="country" id="country" required>
+                <option value="">Select</option>
+                <option value="Nepal">Nepal</option>
+                <option value="India">India</option>
+                <option value="US">US</option>
+              </select>
+              <br><br>
+              <label>Gender</label>
+              <input type="radio" name="gender" id="M"><label for="M">Male</label>
+               <input type="radio" name="gender" id="F"><label for="F">Female</label>
+               <input type="radio" name="gender" id="O"><label for="O">Others</label>
+               <br>
+               <br>
+            <button type="submit">Submit</button>
+    </form>
+  </div>
+    <script src="validate.js"></script>
+</body>
+</html>
